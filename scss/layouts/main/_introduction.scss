@@ -1,0 +1,13 @@
+// Introduction Styles
+.introduction {
+  &__image {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+  &__icon {
+    width: 35px;
+    height: 35px;
+    background-color: darken($secondary, 15%);
+  }
+}

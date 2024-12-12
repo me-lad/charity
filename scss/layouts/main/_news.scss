@@ -1,0 +1,9 @@
+// News Styles
+.news {
+  &__tag {
+    &:hover {
+      color: $black !important;
+      border-color: $black !important;
+    }
+  }
+}

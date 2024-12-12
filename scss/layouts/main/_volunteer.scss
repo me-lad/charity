@@ -1,0 +1,37 @@
+// Volunteer
+.volunteer {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    width: 380px;
+    height: 380px;
+    background-color: $primary;
+    position: absolute;
+    border-radius: 50%;
+    left: 81.5%;
+    top: 73%;
+    @include responsive(tabletL) {
+      top: 78%;
+      left: 86%;
+    }
+    @include responsive(tablet) {
+      top: 90%;
+      left: 86%;
+    }
+  }
+  &__image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    @include responsive(phone) {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  &__uploader {
+    width: 0.1px;
+    height: 0.1px;
+  }
+}

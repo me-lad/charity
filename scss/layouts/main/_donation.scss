@@ -1,0 +1,39 @@
+// Donation Styles
+.donation {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: $primary;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 67.5%;
+    left: -25px;
+    @include responsive(tabletL) {
+      bottom: 75%;
+      left: -70px;
+    }
+    @include responsive(tabletL) {
+      bottom: 75%;
+      left: -135px;
+    }
+  }
+  &::after {
+    content: "";
+    border: 16px solid $secondary;
+    width: 140px;
+    height: 140px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 84%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    @include responsive(phone) {
+      left: 90%;
+    }
+  }
+}

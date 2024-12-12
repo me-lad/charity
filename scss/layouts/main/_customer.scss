@@ -1,0 +1,90 @@
+// Customer Styles
+.customer {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    background-color: $primary;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5%;
+    top: -18.5%;
+    @include responsive(tabletL) {
+      left: -10.5%;
+      top: -22.5%;
+    }
+    @include responsive(tablet) {
+      left: -14%;
+      top: -26%;
+    }
+    @include responsive(phoneL) {
+      left: -18%;
+      top: -32%;
+    }
+    @include responsive(phoneL) {
+      display: none;
+    }
+  }
+  &::after {
+    content: "";
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: $secondary;
+    position: absolute;
+    bottom: -20%;
+    right: -5%;
+    @include responsive(tabletL) {
+      bottom: -30%;
+      right: -15%;
+    }
+    @include responsive(tablet) {
+      bottom: -36%;
+      right: -21%;
+    }
+    @include responsive(phoneL) {
+      display: none;
+    }
+  }
+  &__slide {
+    &-title {
+      &::before {
+        content: open-quote;
+        font-size: 5.2rem;
+        color: $gray;
+      }
+      &::after {
+        content: close-quote;
+        font-size: 5.2rem;
+        color: $gray;
+      }
+    }
+    &-badge {
+      min-width: fit-content;
+      max-width: 180px;
+      height: 40px;
+      position: relative;
+      padding: 0 20px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        transform: rotate(45deg);
+        background-color: $primary;
+        bottom: 62.5%;
+        z-index: -1;
+        opacity: 0.9;
+      }
+      @include responsive(phone) {
+        max-width: 140px;
+        height: 36px;
+      }
+    }
+  }
+  & h4 {
+    @include textBreakkit(2);
+  }
+}

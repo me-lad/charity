@@ -1,0 +1,62 @@
+// Custom-Class
+.f-center {
+  @include displayFlex();
+}
+
+.pos-c {
+  @include positionCenter();
+}
+
+.my-transition {
+  @include transitionDefault();
+}
+
+.textBreakkit-1 {
+  @include textBreakkit(1);
+}
+
+.textBreakkit-2 {
+  @include textBreakkit(2);
+}
+
+.textBreakkit-3 {
+  @include textBreakkit(3);
+}
+
+.textBreakkit-4 {
+  @include textBreakkit(4);
+}
+
+.textBreakkit-5 {
+  @include textBreakkit(5);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.headerBtn {
+  color: $button-text;
+  border-color: $button-text !important;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    border-color: transparent !important;
+  }
+}
+
+.customBtn {
+  background-color: $secondary;
+  color: $white;
+  @include transitionDefault(160ms);
+  &:hover {
+    background-color: $primary !important;
+  }
+}
+
+.customLink {
+  @include transitionDefault(180ms);
+  &:hover {
+    color: $primary !important;
+  }
+}

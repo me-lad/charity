@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kind Heart Charity - Donation</title>
+    <link rel="icon" href="public/images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <!--! Header Start -->
+    <header id="header" class="header w-100 position-relative z-15">
+      <div class="w-100 bg-primary">
+        <div class="container px-4">
+          <div class="row jc-c jc-sm-sb py-3">
+            <div
+              class="col-11 col-sm-12 col-md-9 col-lg-6 d-flex ai-c jc-c jc-md-s gap-6 flex-wrap flex-sm-nowrap row-gap-0"
+            >
+              <div class="d-flex ai-c gap-2 text-gray-600">
+                <i class="bi-geo-alt text-white fs-14"></i>
+                <span class="text-white fs-14">Akershusstranda 20, 0150 Oslo, Norway</span>
+              </div>
+              <div class="d-flex ai-c gap-2 cu-p">
+                <i class="bi-envelope text-white fs-14"></i>
+                <span class="text-white fs-14">info@company.com</span>
+              </div>
+            </div>
+            <div class="col-3 col-lg-6 d-flex ai-c gap-5 jc-end d-none d-md-flex">
+              <a href="#">
+                <i class="bi-twitter text-white fs-14"></i>
+              </a>
+              <a href="#">
+                <i class="bi-facebook text-white fs-14"></i>
+              </a>
+              <a href="#">
+                <i class="bi-instagram text-white fs-14"></i>
+              </a>
+              <a href="#">
+                <i class="bi-youtube text-white fs-14"></i>
+              </a>
+              <a href="#">
+                <i class="bi-whatsapp text-white fs-14"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 bg-white shadow-lg header__sticky py-3 py-sm-0">
+        <div class="container p-0">
+          <div class="row jc-c - jc-xl-sb">
+            <div class="col-11 col-sm-12 col-md-4 d-flex d-md-none d-xl-block">
+              <a class="d-flex ai-c" href="index.html">
+                <img class="w-15 w-md-20 h-auto" src="public/images/logo.png" alt="Kind Heart Charity" />
+                <span class="text-primary fs-22 fw-bold my-transition header__sticky-name">
+                  Kind Heart Charity
+                  <small class="text-secondary d-block fs-10">Non-profit Organization</small>
+                </span>
+              </a>
+              <div class="header__sticky-hamburgerIcon">
+                <i class="bi-justify f-center fs-38"></i>
+              </div>
+            </div>
+            <div class="col-12 col-xl-8 jc-xl-e py-3 py-xl-0 header__sticky-hamburgerMenu">
+              <nav
+                class="d-flex ai-c ai-md-c jc-c jc-xl-e gap-10 jc-xxl-sb gap-xxl-0 w-100 w-xxl-80 pb-0 pb-sm-3 pb-md-0"
+              >
+                <ul class="d-md-flex ai-md-c gap-md-9">
+                  <li>
+                    <a class="fs-16 header__sticky-navLink active" href="index.html#home"> Home </a>
+                  </li>
+                  <li class="mt-3 mt-md-0">
+                    <a class="fs-16 header__sticky-navLink" href="index.html#about">About</a>
+                  </li>
+                  <li>
+                    <a class="fs-16 header__sticky-navLink" href="index.html#causes"> Causes </a>
+                  </li>
+                  <li class="mt-3 mt-md-0">
+                    <a class="fs-16 header__sticky-navLink" href="index.html#volunteer"> Volunteer </a>
+                  </li>
+                  <li class="position-relative header__sticky-dropDown">
+                    <a class="fs-16 header__sticky-navLink d-flex ai-c gap-2" href="index.html#news">
+                      News
+                      <i class="bi-chevron-down fs-13 d-none d-md-block"></i>
+                    </a>
+                    <div
+                      class="header__sticky-subMenu bg-white position-absolute rounded-3 z-10 d-none d-md-block"
+                    >
+                      <ul class="h-100">
+                        <li class="d-flex ai-c h-50 pl-3">
+                          <a class="fs-16 header__sticky-subNavLink cu-p">News Listing</a>
+                        </li>
+                        <li class="d-flex ai-c h-50 pl-3">
+                          <a class="fs-16 header__sticky-subNavLink cu-p">News Detail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mt-3 mt-md-0">
+                    <a class="fs-16 header__sticky-navLink" href="index.html#contact"> Contact </a>
+                  </li>
+                </ul>
+                <a
+                  href="donate.html"
+                  class="headerBtn border border-2 rounded-pill px-6 py-3 my-transition cu-p d-none d-sm-block"
+                >
+                  Donate
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--! Header End -->
+
+    <!--! Main Start -->
+    <main>
+      <section class="donate">
+        <div class="donate__bg py-custom">
+          <div class="container-fluid container-lg p-lg-0">
+            <div class="row">
+              <div
+                class="col-md-10 col-lg-8 col-xxl-6 bg-white rounded-md-5 mx-auto p-6 p-sm-10 position-relative"
+              >
+                <h2 class="text-black fs-32 fw-bold ls-n1">Make a donation</h2>
+                <form class="mt-6">
+                  <div>
+                    <h3 class="text-primary fs-22 ls-n1 fw-bold">Donation Frequency</h3>
+                    <div class="d-flex mt-3">
+                      <div class="w-50 py-5 border-0 fs-14 fs-sm-16 rounded-start-2 donate__button freq active">
+                        One Time
+                      </div>
+                      <div class="w-50 py-5 border-0 fs-14 fs-sm-16 rounded-end-2 donate__button freq">
+                        Monthly
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-primary fs-22 ls-n1 fw-bold">Select an amount</h3>
+                    <div class="row row-gap-3 mt-3">
+                      <div class="col-6 col-sm-3">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+                        <label class="btn btn-outline-secondary border-0 donate__button fs-14" for="btnradio1"
+                          >$10</label
+                        >
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                        <label class="btn btn-outline-secondary border-0 donate__button fs-14" for="btnradio2"
+                          >$15</label
+                        >
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+                        <label class="btn btn-outline-secondary border-0 donate__button fs-14" for="btnradio3"
+                          >$20</label
+                        >
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
+                        <label class="btn btn-outline-secondary border-0 donate__button fs-14" for="btnradio4"
+                          >$30</label
+                        >
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" />
+                        <label class="btn btn-outline-secondary border-0 donate__button fs-14" for="btnradio5"
+                          >$40</label
+                        >
+                      </div>
+                      <div class="col-6 col-sm-3">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" />
+                        <label class="btn btn-outline-secondary border-0 donate__button fs-14" for="btnradio6"
+                          >$50</label
+                        >
+                      </div>
+                      <div class="col-12 col-sm-6 d-flex">
+                        <span
+                          style="min-width: 36px; min-height: 48px"
+                          class="bg-secondary w-10 f-center text-white rounded-start-2"
+                          >$</span
+                        >
+                        <input
+                          class="bg-section-bg border-0 h-100 pl-4 rounded-end-2 w-90"
+                          type="text"
+                          placeholder="Custom amount"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-primary fs-22 ls-n1 fw-bold">Personal Info</h3>
+                    <div class="row row-gap-3 mt-3">
+                      <div class="col-12 col-sm-6">
+                        <input
+                          class="bg-section-bg border-0 rounded-2 py-3 pl-3 w-100"
+                          type="text"
+                          placeholder="Jack Doe"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          class="bg-section-bg border-0 rounded-2 py-3 pl-3 w-100"
+                          type="text"
+                          placeholder="Jackdoe@gmail.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-primary fs-22 ls-n1 fw-bold">Choose Payment</h3>
+                    <div class="mt-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label ml-2 d-flex ai-c gap-2" for="flexRadioDefault1">
+                          <i class="bi-credit-card"></i>
+                          Default radio
+                        </label>
+                      </div>
+                      <div class="form-check mt-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                          checked
+                        />
+                        <label class="form-check-label ml-2 d-flex ai-c gap-2" for="flexRadioDefault2">
+                          <i class="bi-paypal"></i>
+                          Debit or Credit card
+                        </label>
+                      </div>
+                      <button class="w-100 fs-18 rounded-pill mt-5 border-0 py-3 customBtn" type="submit">
+                        Submit Donation
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <a href="index.html" class="donate__closer">
+                  <i class="bi-x-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--! Main End -->
+
+    <!--! Footer Start -->
+    <footer class="footer">
+      <section class="footer__top bg-footer-bg py-10">
+        <div class="container-fluid container-lg px-5 px-sm-10 p-lg-0">
+          <div class="row jc-c row-gap-5">
+            <div class="col-2 d-none d-lg-block">
+              <img class="w-45" src="public/images/logo.png" alt="FooterLogo" />
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-5 col-xl-4">
+              <h3 class="text-primary fs-22 fw-bold ls-n1">Quick Links</h3>
+              <ul class="mt-3 footer__top-list">
+                <li class="py-1">
+                  <a class="customLink text-white" href="#">Our Story</a>
+                </li>
+                <li class="py-1">
+                  <a class="customLink text-white" href="#">Newsroom</a>
+                </li>
+                <li class="py-1">
+                  <a class="customLink text-white" href="#">Causes</a>
+                </li>
+                <li class="py-1">
+                  <a class="customLink text-white" href="#">Become a volunteer</a>
+                </li>
+                <li class="py-1">
+                  <a class="customLink text-white" href="#">Partner with us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 position-relative">
+              <div>
+                <h3 class="text-primary fs-22 fw-bold ls-n1">Contact Infomation</h3>
+                <div class="footer__top-container">
+                  <ul class="footer__top-contacts mt-5">
+                    <li class="d-flex ai-c gap-3">
+                      <i class="bi-telephone text-white fs-15 f-center"></i>
+                      <a class="text-white customLink" href="tel:120-240-9600">120-240-9600</a>
+                    </li>
+                    <li class="d-flex gap-3 ai-c mt-3">
+                      <i class="bi-envelope fs-15 f-center text-white"></i>
+                      <a class="text-white customLink" href="mailto:info@yourgmail.com">donate@charity.org </a>
+                    </li>
+                    <li class="d-flex gap-3 ai-c mt-3">
+                      <i class="bi-geo-alt fs-15 f-center text-white"></i>
+                      <span class="text-white">Akershusstranda 20, 0150 Oslo, Norway</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  class="customBtn text-white f-center px-4 py-3 w-40 rounded-pill mt-7"
+                  href="#"
+                  style="min-width: 145px"
+                  >Get Direction</a
+                >
+              </div>
+              <a
+                class="footer__top-switch border border-1 border-white rounded-pill position-absolute end-0 top-0 f-center"
+              >
+                <i
+                  id="contacts"
+                  class="footer__top-switch-item bi-telephone text-white w-50 h-100 cu-p rounded-start-pill f-center active"
+                >
+                </i>
+                <span class="footer__top-switch-line"></span>
+                <i
+                  id="social"
+                  class="footer__top-switch-item bi-instagram text-white w-50 h-100 cu-p rounded-end-pill f-center"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom bg-secondary py-5">
+        <div class="container-fluid container-lg px-5 p-lg-0">
+          <div class="row">
+            <div class="col-12 d-flex jc-c">
+              <span class="text-white fs-14 opacity-75">Copyright © 2024 Kind Heart Charity Org.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--! Footer End -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/js/donate.min.js"></script>
+  </body>
+</html>

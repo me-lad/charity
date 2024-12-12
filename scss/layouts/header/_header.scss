@@ -1,0 +1,84 @@
+// Header Styles
+.header {
+  @include responsive(phoneL) {
+    overflow: hidden !important;
+  }
+  &__sticky {
+    @include responsive(phoneL) {
+      max-height: 90px;
+    }
+    &-name:hover {
+      color: $black !important;
+    }
+    &-navLink {
+      color: $gray-600;
+      @include transitionDefault();
+      &.active,
+      &:hover {
+        color: $primary;
+      }
+    }
+    &-subNavLink {
+      @extend .header__sticky-navLink;
+    }
+    &-dropDown:hover &-subMenu {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0.75rem);
+    }
+    &-subMenu {
+      width: 150px;
+      height: 75px;
+      top: 3rem;
+      left: -1rem;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 280ms ease-in;
+      box-shadow: 0 0 1px $gray;
+    }
+    &-hamburgerMenu {
+      @include displayFlex();
+      @include responsive(phoneL) {
+        display: none;
+        & * {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+      & ul {
+        @include responsive(phoneL) {
+          column-count: 3;
+          column-gap: 4rem;
+          & > li {
+            height: 50%;
+            display: flex;
+          }
+        }
+      }
+    }
+    &-hamburgerIcon {
+      display: none;
+      cursor: pointer;
+      @include responsive(phoneL) {
+        @include displayFlex();
+      }
+    }
+  }
+  & > div:nth-child(1) {
+    max-height: 44px;
+    @include responsive(phone) {
+      max-height: 50px;
+    }
+    & * {
+      @include responsive(tablet) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}

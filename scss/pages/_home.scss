@@ -1,0 +1,49 @@
+// SwiperJs fade effect issue
+.swiper-slide {
+  opacity: 1 !important;
+  &:not(.swiper-slide-active) {
+    opacity: 0 !important;
+  }
+}
+
+// SwiperJs Pagination Customize
+.swiper-pagination {
+  &-bullet {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 1 !important;
+    margin: 0 8px !important;
+    background: url(../../public/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg)
+      no-repeat;
+    background-position: -17px 0px;
+    background-size: 170%;
+    &[aria-label="Go to slide 2"] {
+      background: url(../../public/images/avatar/portrait-young-redhead-bearded-male.jpg)
+        no-repeat;
+      background-position: -14px 0px;
+      background-size: 170%;
+    }
+    &[aria-label="Go to slide 3"] {
+      background: url(../../public/images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg)
+        no-repeat;
+      background-position: -14px 0px;
+      background-size: 170%;
+    }
+    &[aria-label="Go to slide 4"] {
+      background: url(../../public/images/avatar/studio-portrait-emotional-happy-funny.jpg)
+        no-repeat;
+      background-position: -14px 0px;
+      background-size: 160%;
+    }
+    &:not(.swiper-pagination-bullet-active) {
+      opacity: 0.5 !important;
+    }
+  }
+}
+
+// FormCheck Color
+.form-check-input:checked {
+  color: $blue-200;
+  background-color: $blue-200;
+}

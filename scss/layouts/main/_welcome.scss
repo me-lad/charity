@@ -1,0 +1,17 @@
+// Welcome Styles
+.welcome {
+  &__box {
+    &-image {
+      @include transitionDefault(250ms);
+    }
+    &:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    &:hover &-image {
+      scale: 0.8;
+    }
+    &:hover &-text {
+      transform: translateY(-1rem);
+    }
+  }
+}

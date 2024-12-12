@@ -1,0 +1,60 @@
+// Slider Styles
+.slider {
+  &__container {
+    &-image {
+      max-height: 600px;
+      clip-path: polygon(0 0, 101.5% 0, 45% 100%, 0 100%);
+      user-select: none;
+      @include responsive(laptop) {
+        clip-path: polygon(0 0, 101.5% 0, 40% 100%, 0 100%);
+      }
+      @include responsive(tabletL) {
+        max-height: 470px;
+        clip-path: polygon(0 0, 101.5% 0, 34% 100%, 0 100%);
+      }
+      @include responsive(phoneL) {
+        max-height: 350px;
+        clip-path: polygon(0 0, 101.5% 0, 39% 100%, 0 100%);
+      }
+      @include responsive(phone) {
+        max-height: 250px;
+        clip-path: polygon(0 0, 101.5% 0, 20% 100%, 0 100%);
+      }
+    }
+    &-description {
+      position: absolute;
+      right: 8%;
+      top: 70%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @include responsive(tablet) {
+        top: 80%;
+        right: 3%;
+      }
+    }
+  }
+  &__btn {
+    width: 75px;
+    height: 75px;
+    @include responsive(tablet) {
+      width: 55px;
+      height: 55px;
+    }
+    @include responsive(phone) {
+      width: 40px;
+      height: 40px;
+    }
+    &::after {
+      @include responsive(tablet) {
+        font-size: 30px !important;
+      }
+      @include responsive(phone) {
+        font-size: 18px !important;
+      }
+    }
+  }
+  &:hover .slider__btn {
+    opacity: 1 !important;
+  }
+}

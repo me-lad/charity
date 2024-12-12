@@ -1,0 +1,15 @@
+.about {
+  &__image {
+    max-width: 636px;
+    min-height: 580px;
+    object-fit: cover;
+    @include responsive(laptop) {
+      max-width: 100%;
+      min-height: 100%;
+    }
+  }
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+}
